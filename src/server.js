@@ -3,6 +3,7 @@ import express from 'express';
 
 import React from 'react';
 import { renderToString } from 'react-dom/server';
+import { StaticRouter } from 'react-router-dom';
 
 import App from './app.js';
 
@@ -18,7 +19,11 @@ app.disable('x-powered-by');
 app.get('/*', (req, res) => {
   const context = {};
 
-  const app = renderToString(<App />);
+  const app = renderToString(
+    <StaticRouter location={req.url} context={context}>
+      <App />
+    </StaticRouter>
+  );
 
   const html = `
     <!doctype html>

@@ -7,6 +7,7 @@ Development environment
 -----------------------
 Requirements:
 - React
+- React Router
 - Express (+ Node)
 
 Dependencies while developing:
@@ -15,7 +16,6 @@ Dependencies while developing:
 - Nodemon
 
 Upcoming requirements:
-- React Router
 - Apollo Client (GraphQL)
 - Redux
 
