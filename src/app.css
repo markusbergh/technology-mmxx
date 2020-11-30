@@ -1,0 +1,28 @@
+.navigation {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2vw 4vw 0;
+}
+
+.navigation__list {
+  display: flex;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navigation__list_item {
+  margin-right: 15px;
+}
+
+.navigation__list_item:last-child {
+  margin-right: 0;
+}
+
+.navigation__list_item a {
+  color: inherit;
+}
+
+.main {
+  padding: 0 4vw;
+  box-sizing: border-box;
+}
