@@ -35,8 +35,10 @@ const config = {
         test: /\.css$/i,
         loader: 'css-loader',
         options: {
-          // Enable CommonJS modules syntax
-          esModule: false,
+          modules: {
+            localIdentName: '[name]__[local]--[hash:base64:5]',
+            exportOnlyLocals: true,
+          },
         },
       },
     ],
